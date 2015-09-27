@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="type=text/html; charset=utf-8"/>
+	<title>搜索</title>
+	<link rel="stylesheet" type="text/css" href="/sdk/styles/base.css" />
+	<script type="text/javascript" src="/sdk/scripts/game-center.js" ></script>
+	<script type="text/javascript" src="/sdk/scripts/globals.js" ></script>
+	<script type="text/javascript" src="/sdk/scripts/search.js" ></script>
+</head>
+<body>
+	<header>
+	<nav>
+		<ul>
+			<li><a href="desktop.html">首页</a></li>
+			<li><a href="rank.html">排行</a></li>
+			<li><a href="type.html">分类</a></li>
+			<li><a href="search.html">搜索</a></li>
+			<li><a href="aboutme.html">我的</a></li>
+		</ul>
+	</nav>
+	</header>
+	<article>
+    <input type='text' id="keyWord" placeholder="请输入游戏名称关键字" required="required" />
+    <button id = "search">搜索</button>
+	<input type='text' id="keyWord-dev" placeholder="请输入开发者名称关键字" required="required" />
+    <button id = "searchByDev">搜索</button>
+
+    <button id = "expireWeek">本周上升最快</button>
+    <button id = "hotKeyword">热门关键字</button>
+    <button id = "player-Statis">用户行为统计</button>
+    <button id = "listRandom">随机APP</button>
+
+    <div class="board">
+            <div id="score_board">
+            </div>
+    </div>
+	</article>
+</body>

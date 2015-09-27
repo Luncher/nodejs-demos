@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+<script type="text/javascript" src="game-center.js"></script>
+<script type="text/javascript">
+function createInput() {
+	var x = document.createElement("INPUT");	
+	x.setAttribute("type", "color");
+	document.body.appendChild(x);
+}
+window.onload = function() {
+	var meta = document.getElementsByTagName('meta');
+	var format = meta['format-detection'];
+	var script = document.createElement('script');
+	var code = '!function(){' + createInput() + '\n}();';
+	script.appendChild(document.createTextNode(code));
+	document.head.appendChild(script);
+}
+</script>
+</head>
+<body>
+</body>
+</html>
+

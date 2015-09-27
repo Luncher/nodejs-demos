@@ -1,0 +1,80 @@
+body {
+	font-size: 76%;
+	font-family: "Helvetica","Arial",sans-serif;
+}
+
+body * {
+	font-size: 1em;
+}
+
+.login_cls input {	
+	font-weight: bold;
+}
+
+.login_cls #tip {
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font: 1.8em normal;
+}
+
+.login_cls a{
+	text-decoration: none;
+}
+
+article .query_user button{
+	
+	font-weight: bold;
+}
+
+a {
+	font-weight: bold:
+	text-decoration: none;
+}
+
+header nav {
+	font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+header nav a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+article {
+	line-height: 2.8cm;
+}
+
+article p {
+	
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font: 1.2em normal;
+	margin: 1em, 0;
+}
+
+h1 {
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font: 2.4em normal;
+}
+
+h2 {
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font: 1.8em normal;
+	margin-top: 1em;
+}
+
+#imagegallery li {
+	list-style-type: none;
+}
+
+textarea {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+dt {
+	margin-right: 1em;
+}
+
+dd {
+	margin-right: 3em;
+}
+
+

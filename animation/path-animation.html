@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="./path-animation.js"></script>
+<script type="text/javascript">
+
+window.onload = function() {
+	run(document.getElementById('mycanvas').getContext('2d'), function(ctx) {
+		var location = this.getPosition();
+		var angel = this.getDirection();
+		console.debug('angel: ', angel);
+		console.debug('position: ', location);
+		ctx.strokeStyle = 'red';
+		ctx.lineWidth = 3;
+		ctx.moveTo(location.x, location.y);
+		ctx.lineTo(location.x + 4, location.y - 4);
+	});
+};
+
+function AccelerateInterpolator() {
+	this.get = function(percent) {
+		return percent * percent;
+	}
+
+	return this;
+}
+
+function DecelerateInterpolator(factor) {
+	this.factor = factor ? factor : 2;
+	this.get = function(percent) {
+		if(this.factor === 1) {
+			return (1.0 - (1.0 - percent) * (1.0 - percent));
+		}
+		else {
+			return (1.0 - Math.pow((1.0 - percent), 2 * this.factor));
+		}
+	}
+
+	return this;
+}
+
+function BounceInterpolator() {
+	function bounce(percent) {
+		return 8 * percent * percent;
+	}
+
+	this.get = function(percent) {
+		percent *= 1.1226;
+        if (percent < 0.3535) return bounce(percent);
+        else if (percent < 0.7408) return bounce(percent - 0.54719) + 0.7;
+        else if (percent < 0.9644) return bounce(percent - 0.8526) + 0.9;
+        else return bounce(percent - 1.0435) + 0.95;
+	}
+
+	return this;
+}
+
+function run(ctx, onUpdate) {
+
+	var accInter = new AccelerateInterpolator();
+	var decInter = new DecelerateInterpolator();
+	var bounceInter = new BounceInterpolator();
+
+	var pathAnim = new PathAnimation({x: 120, y:120});
+	pathAnim.sinTo(100, 20*Math.PI, 120*Math.PI, 6000, accInter);
+	//pathAnim.arcTo(420, 420, 380, 460, 100, 3000, decInter).arcTo(300, 200, 400, 100, 30, 5000, accInter).lineTo(100, 300, 3000, decInter).bezierCurveTo(20, 100, 20, 100, 200, 20, 5000, decInter).quadraticCurveTo(270, -200, 320, 320, 5000, accInter).lineTo(600, 800, 5000, accInter);
+
+	function animStep() {
+		if(!pathAnim.isOver()) {
+			pathAnim.draw(ctx, onUpdate);
+			requestAnimationFrame(animStep);
+		}
+		else {
+			console.debug("Animation done.");
+		}
+	}
+	
+	pathAnim.start(animStep);
+
+	return;
+}
+</script>
+
+</head>
+<body>
+	<div>
+		<center><canvas id="mycanvas" style="border-style:dashed;" width="800" height="600"></canvas></center>
+	</div>
+</body>
+</html>

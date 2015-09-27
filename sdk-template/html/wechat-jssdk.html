@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="0" />
+	<meta http-equiv="Content-Type" content="type=text/html; charset=utf-8"/>
+	<title>wechat-jssdk demo</title>
+	<style>
+	body {
+		text-align: center;
+	}
+	input {
+		width: 200px;
+		height: 80px;
+		font-size:40px;
+	}
+	</style>
+	<script type="text/javascript" src = "http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript">
+		function get(uri) {
+			return http(uri, 'GET', null);	
+		}
+		function post(uri, data) {
+			if(typeof data === 'object' && !(data instanceof String || (FormData && data instanceof FormData))) {
+				var params = [];
+				for(var p in data) {
+					if(data[p] instanceof Array) {
+						for(var i = 0; i < data[p].length; i++) {
+							params.push(encodeURIComponent(p) + '[]='+encodeURIComponent(data[p][i]));
+						}
+					}
+					else {
+						params.push(encodeURIComponent(p) + '=' + encodeURIComponent(data[p]));	
+					}
+				}
+				data = params.join('&');
+			}
+			return http(uri, 'POST', data||null, {
+				'Content-Type': 'application/x-www-form-urlencoded'
+			});
+		}
+
+		function http(uri, method, data, headers) {
+			//alert('promise: ' + typeof Promise);
+			return new Promise(function(resolve, reject) {
+				var xhr = new XMLHttpRequest();
+				xhr.open(method, uri, true);
+				if(headers) {
+					for(var p in headers) {
+						xhr.setRequestHeader(p, headers[p]);
+					}
+				}
+				xhr.addEventListener('readystatechange', function(e) {
+					if(xhr.readyState === 4) {
+						if(String(xhr.status).match(/^2\d\d$/)) {
+							try {
+								var data = JSON.parse(xhr.responseText);
+								resolve(data);
+							}
+							catch(e) {
+								reject(e);	
+							}
+						}
+						else {
+							reject(xhr);
+						}
+					}
+				});
+				xhr.send(data);
+			});	
+		}
+
+		function wechatShare(cfg) {
+			var inter = setInterval(function() {
+				try {
+					wx.config(cfg);
+					clearInterval(inter);
+				}
+				catch(e) {
+					console.log('wait ready');	
+				}
+			}, 200);
+
+			var titleItem = document.getElementById('shareTitle');
+			titleItem.onchange = function() {
+				var shareTitle = titleItem.value;
+				alert('shareTitle: ' + shareTitle);
+				wx.onMenuShareAppMessage({
+					title: shareTitle, // 分享标题
+					desc: 'TangIDE test onMenuShareAppMessage', // 分享描述
+					link: window.location.href, // 分享链接
+					imgUrl: 'http://img1.bdstatic.com/static/common/widget/search_box_home/logo/home_white_logo_0ddf152.png',
+					type: 'link', // 分享类型,music、video或link，不填默认为link
+					success: function () { 
+						// 用户确认分享后执行的回调函数
+					},
+					cancel: function () { 
+						// 用户取消分享后执行的回调函数
+					}
+				});
+			};
+
+			wx.ready(function() {
+			/*
+				wx.onMenuShareAppMessage({
+				title: '1234567', // 分享标题
+				desc: 'TangIDE test onMenuShareAppMessage', // 分享描述
+				link: window.location.href, // 分享链接
+				imgUrl: 'http://img1.bdstatic.com/static/common/widget/search_box_home/logo/home_white_logo_0ddf152.png',
+				type: 'link', // 分享类型,music、video或link，不填默认为link
+				success: function () { 
+					// 用户确认分享后执行的回调函数
+				},
+				cancel: function () { 
+					// 用户取消分享后执行的回调函数
+				}
+				});
+				*/
+			});
+
+			wx.error(function(res) {
+
+			});
+		}
+
+		function regConfig() {
+			var uri = 'http://www.i5r.com.cn/weixin/php/json_config.php' +
+						'?url=' + window.btoa(location.href);
+			get(uri).then(function(data) {
+				data.debug = true;
+				wechatShare(data);
+			}).catch(function(err) {
+				alert('request error:' + err);	
+			});
+		}
+
+		window.onload = function() {
+			setTimeout(regConfig, 600);
+		};
+	</script>
+</head>
+<body>
+	<p><input placeholder="分享标题" type="text" id="shareTitle" required="required"/></p>
+</body>
+</html>

@@ -1,0 +1,331 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+#about img 	styles/layout.css	/^#about img {$/;"	i
+#contact header 	styles/layout.css	/^#contact header {$/;"	i
+#imagegallery a 	styles/color.css	/^#imagegallery a {$/;"	i
+#imagegallery li 	styles/layout.css	/^#imagegallery li {$/;"	i
+#imagegallery li 	styles/typography.css	/^#imagegallery li {$/;"	i
+#live header 	styles/layout.css	/^#live header {$/;"	i
+#photos img 	styles/layout.css	/^#photos img {$/;"	i
+#preview 	styles/layout.css	/^#preview {$/;"	i
+#slideshow 	styles/layout.css	/^#slideshow {$/;"	i
+.login_cls #tip 	styles/typography.css	/^.login_cls #tip {$/;"	c
+.login_cls a	styles/typography.css	/^.login_cls a{$/;"	c
+.login_cls input 	styles/typography.css	/^.login_cls input {	$/;"	c
+Ajax	scripts/ajax.js	/^function Ajax()$/;"	c
+Ajax	scripts/sdk.js	/^function Ajax()$/;"	c
+Ajax.makeRequest	scripts/ajax.js	/^	this.makeRequest = function(remote, callback, data, async, progress)$/;"	m
+Ajax.makeRequest	scripts/sdk.js	/^	this.makeRequest = function(remote, callback, data, async, progress)$/;"	m
+Copy	scripts/filemanager.js	/^function Copy()$/;"	f
+Cut	scripts/filemanager.js	/^function Cut()$/;"	f
+Delete	scripts/filemanager.js	/^function Delete()$/;"	f
+Desktop	scripts/desktop.js	/^function Desktop() {$/;"	c
+Desktop.getHotBoard	scripts/desktop.js	/^    this.getHotBoard = function() {$/;"	m
+Desktop.getHotCallback	scripts/desktop.js	/^    this.getHotCallback = function(data) {$/;"	m
+Desktop.getRateBoard	scripts/desktop.js	/^    this.getRateBoard = function() {$/;"	m
+Desktop.getRateCallback	scripts/desktop.js	/^    this.getRateCallback = function(data) {$/;"	m
+Desktop.getRecommandBoard	scripts/desktop.js	/^    this.getRecommandBoard = function() {$/;"	m
+Desktop.getRecommandCallback	scripts/desktop.js	/^    this.getRecommandCallback = function(data) {$/;"	m
+Download	scripts/filemanager.js	/^function Download()$/;"	f
+GameSurface	scripts/sdk.js	/^function GameSurface() {$/;"	c
+GameSurface.GameSurface.getGameType.command.cmd	scripts/sdk.js	/^			'cmd':this.GET_GAME_TYPE};$/;"	p
+GameSurface.GameSurface.getRank.command.cmd	scripts/sdk.js	/^			'cmd':this.GET_GAME_RANK,$/;"	p
+GameSurface.GameSurface.getRankByType.command.cmd	scripts/sdk.js	/^            'cmd':this.GET_RANK_BY_TYPE,$/;"	p
+GameSurface.GameSurface.getStatis.command.cmd	scripts/sdk.js	/^			'cmd':this.GET_GAME_STATIS,$/;"	p
+GameSurface.GameSurface.like.command.cmd	scripts/sdk.js	/^			'cmd':this.GAME_LIKE,$/;"	p
+GameSurface.GameSurface.selectGameByType.command.cmd	scripts/sdk.js	/^		'cmd':this.SELECT_GAME_BY_TYPE,$/;"	p
+GameSurface.GameSurface.selectTotalGame.command.cmd	scripts/sdk.js	/^			'cmd':this.SELECT_GAME_LIMIT,$/;"	p
+GameSurface.GameSurface.start.command.cmd	scripts/sdk.js	/^			'cmd':this.GAME_CLICKED,$/;"	p
+GameSurface.fetchLocalGameCache	scripts/sdk.js	/^    this.fetchLocalGameCache = function(gameId) {$/;"	m
+GameSurface.getClientId	scripts/sdk.js	/^    this.getClientId = function() {$/;"	m
+GameSurface.getGameType	scripts/sdk.js	/^    this.getGameType = function(callback) {$/;"	m
+GameSurface.getRank	scripts/sdk.js	/^	this.getRank = function(order, callback)  {$/;"	m
+GameSurface.getRankByType	scripts/sdk.js	/^    this.getRankByType = function(type, order, offset, rows, callback) {$/;"	m
+GameSurface.getSaveData	scripts/sdk.js	/^	this.getSaveData = function(callback) {$/;"	m
+GameSurface.getStatis	scripts/sdk.js	/^    this.getStatis = function(callback) {$/;"	m
+GameSurface.hashCode	scripts/sdk.js	/^   this.hashCode = function() {$/;"	m
+GameSurface.like	scripts/sdk.js	/^    this.like    = function(callback) {$/;"	m
+GameSurface.parseGameId	scripts/sdk.js	/^   this.parseGameId = function() {$/;"	m
+GameSurface.pause	scripts/sdk.js	/^	this.pause = function() {$/;"	m
+GameSurface.restart	scripts/sdk.js	/^	this.restart = function() {$/;"	m
+GameSurface.saveData	scripts/sdk.js	/^	this.saveData = function(data, callback) {$/;"	m
+GameSurface.selectGameByType	scripts/sdk.js	/^    this.selectGameByType = function(callback, gameType, order, offset=0, rows = -1) {$/;"	m
+GameSurface.selectTotalGame	scripts/sdk.js	/^    this.selectTotalGame = function(order, offset, rows, callback) {$/;"	m
+GameSurface.start	scripts/sdk.js	/^	this.start = function() {$/;"	m
+GameSurface.stop	scripts/sdk.js	/^	this.stop = function() {$/;"	m
+GameSurface.var.command.cmd	scripts/sdk.js	/^			'cmd':this.SAVE_GAME_CACHE,$/;"	p
+GameSurface.var.command.cmd	scripts/sdk.js	/^                'cmd':this.GET_GAME_CACHE,$/;"	p
+GoDir	scripts/filemanager.js	/^function GoDir()$/;"	f
+ParentDir	scripts/filemanager.js	/^function ParentDir()$/;"	f
+Paste	scripts/filemanager.js	/^function Paste()$/;"	f
+Redo	scripts/filemanager.js	/^function Redo()$/;"	f
+Redo.command.appid	scripts/filemanager.js	/^	appid:"2",$/;"	p
+Redo.command.cmd	scripts/filemanager.js	/^	cmd:"13"};$/;"	p
+Rename	scripts/filemanager.js	/^function Rename()$/;"	f
+Sync	scripts/filemanager.js	/^function Sync()$/;"	f
+Undo	scripts/filemanager.js	/^function Undo()$/;"	f
+Undo.command.appid	scripts/filemanager.js	/^	appid:"2",$/;"	p
+Undo.command.cmd	scripts/filemanager.js	/^	cmd:"12"};$/;"	p
+Upload	scripts/filemanager.js	/^function Upload()$/;"	f
+a 	styles/typography.css	/^a {$/;"	s
+a:active 	styles/color.css	/^a:active {$/;"	s
+a:hover 	styles/color.css	/^a:hover {$/;"	s
+a:link 	styles/color.css	/^a:link {$/;"	s
+a:visited 	styles/color.css	/^a:visited {$/;"	s
+addClass	scripts/globals.js	/^function addClass(element, value){$/;"	f
+addLoadEvent	scripts/globals.js	/^function addLoadEvent(func)$/;"	f
+addLoadEvent	scripts/sdk.js	/^function addLoadEvent(func)$/;"	f
+add_user_init	scripts/add_user.js	/^function add_user_init(){$/;"	f
+ajax	scripts/http_request.js	/^function ajax()$/;"	c
+ajax.make_request	scripts/http_request.js	/^	this.make_request = function(remote, callback, data, async, progress)$/;"	m
+article	styles/layout.css	/^section, header, article, nav {$/;"	s
+article 	styles/color.css	/^article {$/;"	s
+article 	styles/layout.css	/^article {$/;"	s
+article 	styles/typography.css	/^article {$/;"	s
+article #hot_board 	styles/layout.css	/^article #hot_board {$/;"	s
+article #realtime_board 	styles/layout.css	/^article #realtime_board {$/;"	s
+article #recommand_board 	styles/layout.css	/^article #recommand_board {$/;"	s
+article #score_board 	styles/layout.css	/^article #score_board {$/;"	s
+article #slide_show 	styles/layout.css	/^article #slide_show {$/;"	s
+article #sub_board 	styles/layout.css	/^article #sub_board {$/;"	s
+article .board	styles/layout.css	/^article .board{$/;"	s
+article .board h3 	styles/layout.css	/^article .board h3 {  $/;"	s
+article .board li 	styles/layout.css	/^article .board li {  $/;"	s
+article .board li img 	styles/layout.css	/^article .board li img {  $/;"	s
+article .board li p 	styles/layout.css	/^article .board li p {  $/;"	s
+article .board li:hover 	styles/layout.css	/^article .board li:hover {  $/;"	s
+article .board ul 	styles/layout.css	/^article .board ul {$/;"	s
+article .query_user button	styles/typography.css	/^article .query_user button{$/;"	s
+article button 	styles/layout.css	/^article button {$/;"	s
+article img 	styles/color.css	/^article img {$/;"	s
+article li 	styles/layout.css	/^article li {$/;"	s
+article p 	styles/typography.css	/^article p {$/;"	s
+body	styles/layout.css	/^body{$/;"	s
+body 	styles/color.css	/^body { $/;"	s
+body 	styles/typography.css	/^body {$/;"	s
+body * 	styles/typography.css	/^body * {$/;"	s
+check_login_send	scripts/login.js	/^function check_login_send()$/;"	f
+check_params	scripts/edit_user.js	/^function check_params(thisform)$/;"	f
+check_params	scripts/login.js	/^function check_params(){$/;"	f
+check_user_info	scripts/add_user.js	/^function check_user_info(thisform)$/;"	f
+check_user_info	scripts/register.js	/^function check_user_info(thisform)$/;"	f
+createCode	scripts/register.js	/^function createCode() {$/;"	f
+create_file	scripts/filemanager.js	/^function create_file()$/;"	f
+create_file.command.appid	scripts/filemanager.js	/^		appid:"2",$/;"	p
+create_file.command.cmd	scripts/filemanager.js	/^		cmd:"11",$/;"	p
+create_file.command.path	scripts/filemanager.js	/^		path:g_current_path};$/;"	p
+create_file_callback	scripts/filemanager.js	/^function create_file_callback(rsp)$/;"	f
+create_folder	scripts/filemanager.js	/^function create_folder()$/;"	f
+create_folder.command.appid	scripts/filemanager.js	/^		appid:"2",$/;"	p
+create_folder.command.cmd	scripts/filemanager.js	/^		cmd:"10",$/;"	p
+create_folder.command.path	scripts/filemanager.js	/^		path:g_current_path};$/;"	p
+create_folder_callback	scripts/filemanager.js	/^function create_folder_callback(rsp)$/;"	f
+create_href	scripts/user_list.js	/^function create_href(row_count)$/;"	f
+create_list_view	scripts/filemanager.js	/^function create_list_view(obj_file)$/;"	f
+create_p	scripts/edit_user.js	/^function create_p(prt, text_node, input_id){$/;"	f
+create_swift_table	scripts/user_list.js	/^function create_swift_table(thisform)$/;"	f
+create_table_list	scripts/user_list.js	/^function create_table_list(userinfo)$/;"	f
+dd 	styles/layout.css	/^dd {$/;"	s
+dd 	styles/typography.css	/^dd {$/;"	s
+delete_callback	scripts/filemanager.js	/^function delete_callback(rsp)$/;"	f
+description	scripts/globals.js	/^	var description = document.getElementById('description');$/;"	v
+dir_context	scripts/filemanager.js	/^function dir_context()$/;"	c
+dir_context.current_path	scripts/filemanager.js	/^	this.current_path = function()$/;"	m
+dir_context.empty	scripts/filemanager.js	/^	this.empty = function()$/;"	m
+dir_context.next_path	scripts/filemanager.js	/^	this.next_path = function()$/;"	m
+dir_context.pop	scripts/filemanager.js	/^	this.pop = function()$/;"	m
+dir_context.prev_path	scripts/filemanager.js	/^	this.prev_path = function()$/;"	m
+dir_context.push	scripts/filemanager.js	/^	this.push = function(path)$/;"	m
+displayAbbreviations	scripts/globals.js	/^function displayAbbreviations(){$/;"	f
+displayAjaxLoading	scripts/globals.js	/^function displayAjaxLoading(element){$/;"	f
+dl 	styles/layout.css	/^dl {$/;"	s
+download_callback	scripts/filemanager.js	/^function download_callback(rsp)$/;"	f
+dt 	styles/layout.css	/^dt {$/;"	s
+dt 	styles/typography.css	/^dt {$/;"	s
+edit_user_init	scripts/edit_user.js	/^function edit_user_init(){$/;"	f
+element.onblur	scripts/globals.js	/^		element.onblur = function(){$/;"	f
+fieldset 	styles/layout.css	/^fieldset {$/;"	s
+fieldset .submit_btn	styles/layout.css	/^fieldset .submit_btn{$/;"	s
+filemanager_init	scripts/filemanager.js	/^function filemanager_init(){$/;"	f
+function.logoff_callback	scripts/globals.js	/^function logoff_callback(obj_info){$/;"	f
+function.user_logout	scripts/globals.js	/^function user_logout(){$/;"	f
+function.user_logout.command.appid	scripts/globals.js	/^	var command={appid:1, cmd:"8"};$/;"	p
+function.user_logout.command.cmd	scripts/globals.js	/^	var command={appid:1, cmd:"8"};$/;"	p
+gameTypeInit	scripts/type.js	/^function gameTypeInit() {$/;"	f
+getGameTypeCallback	scripts/type.js	/^function getGameTypeCallback(data) {$/;"	f
+getHTTPObject	scripts/globals.js	/^function getHTTPObject(){$/;"	f
+getMounthBoard	scripts/game_init.js	/^function getMounthBoard() {$/;"	f
+getResponse	scripts/ajax.js	/^	this.getResponse = function() $/;"	c
+getResponse	scripts/sdk.js	/^	this.getResponse = function() $/;"	c
+getSaveData	scripts/game_init.js	/^function getSaveData() {$/;"	f
+getSaveDataCallback	scripts/game_init.js	/^function getSaveDataCallback(data) {$/;"	f
+getScoreBoard	scripts/game_init.js	/^function getScoreBoard() {$/;"	f
+getScoreBoardCallback	scripts/game_init.js	/^function getScoreBoardCallback(data) {$/;"	f
+getTotalBoard	scripts/game_init.js	/^function getTotalBoard() {$/;"	f
+getWeekBoard	scripts/game_init.js	/^function getWeekBoard() {$/;"	f
+getWeekBoardCallback	scripts/game_init.js	/^function getWeekBoardCallback(data) {$/;"	f
+get_current_file_path	scripts/filemanager.js	/^function get_current_file_path()$/;"	f
+get_current_select_path	scripts/filemanager.js	/^function get_current_select_path()$/;"	f
+get_response	scripts/http_request.js	/^	this.get_response = function() $/;"	c
+getlist_callback	scripts/filemanager.js	/^function getlist_callback(rsp)$/;"	f
+goRank	scripts/type.js	/^function goRank(thisform) {$/;"	f
+gotoGame	scripts/desktop.js	/^function gotoGame(thisform) {$/;"	f
+h1 	styles/typography.css	/^h1 {$/;"	s
+h2 	styles/typography.css	/^h2 {$/;"	s
+header	styles/layout.css	/^section, header, article, nav {$/;"	s
+header 	styles/color.css	/^header {$/;"	s
+header 	styles/layout.css	/^header {$/;"	s
+header nav 	styles/color.css	/^header nav {$/;"	s
+header nav 	styles/layout.css	/^header nav {$/;"	s
+header nav 	styles/typography.css	/^header nav {$/;"	s
+header nav a 	styles/typography.css	/^header nav a {$/;"	s
+header nav a.here:active 	styles/color.css	/^header nav a.here:active {$/;"	s
+header nav a.here:hover	styles/color.css	/^header nav a.here:hover,$/;"	s
+header nav a.here:link	styles/color.css	/^header nav a.here:link,$/;"	s
+header nav a.here:visited	styles/color.css	/^header nav a.here:visited,$/;"	s
+header nav a:active 	styles/color.css	/^header nav a:active {$/;"	s
+header nav a:hover 	styles/color.css	/^header nav a:hover {$/;"	s
+header nav a:link	styles/color.css	/^header nav a:link, header nav a:visited {$/;"	s
+header nav a:visited 	styles/color.css	/^header nav a:link, header nav a:visited {$/;"	s
+header nav li 	styles/layout.css	/^header nav li {$/;"	s
+header nav li a 	styles/layout.css	/^header nav li a {$/;"	s
+header nav ul 	styles/color.css	/^header nav ul {$/;"	s
+header nav ul 	styles/layout.css	/^header nav ul {$/;"	s
+highlightPage	scripts/globals.js	/^function highlightPage(){$/;"	f
+highlightRows	scripts/globals.js	/^function highlightRows(){$/;"	f
+init	scripts/filemanager.js	/^function init()$/;"	f
+init	scripts/login.js	/^function init(){$/;"	f
+initButton	scripts/game_init.js	/^function initButton() {$/;"	f
+initDesktop	scripts/desktop.js	/^function initDesktop() {$/;"	f
+input.placeholder 	styles/color.css	/^input.placeholder {$/;"	s
+insertAfter	scripts/globals.js	/^function insertAfter(new_elem, target_elem){$/;"	f
+isEmail	scripts/globals.js	/^function isEmail(field){$/;"	f
+isFilled	scripts/globals.js	/^function isFilled(field){$/;"	f
+label 	styles/layout.css	/^label {$/;"	s
+likeCallback	scripts/game_init.js	/^function likeCallback(data) {$/;"	f
+likeGame	scripts/game_init.js	/^function likeGame() {$/;"	f
+links	scripts/globals.js	/^		links[index].onmouseover = function(){$/;"	f
+login_callback	scripts/login.js	/^function login_callback(obj_info)$/;"	f
+margin:0	styles/layout.css	/^	margin:0;$/;"	s
+moveElement	scripts/globals.js	/^function moveElement(elemid, final_x, final_y, interval){$/;"	f
+nav 	styles/layout.css	/^section, header, article, nav {$/;"	s
+next	scripts/filemanager.js	/^function next()$/;"	f
+on_click_file	scripts/filemanager.js	/^function on_click_file(thisform)$/;"	f
+on_dblclick_file	scripts/filemanager.js	/^function on_dblclick_file(thisform)$/;"	f
+on_delete	scripts/user_list.js	/^function on_delete(thisform)$/;"	f
+on_delete.command.appid	scripts/user_list.js	/^		appid:1,$/;"	p
+on_delete.command.board_id	scripts/user_list.js	/^		board_id:board_id,$/;"	p
+on_delete.command.cmd	scripts/user_list.js	/^		cmd:"4",$/;"	p
+on_delete.command.group_id	scripts/user_list.js	/^		group_id:group_id$/;"	p
+on_delete.command.user_id	scripts/user_list.js	/^		user_id:index,$/;"	p
+on_delete_callback	scripts/user_list.js	/^function on_delete_callback(obj_info)$/;"	f
+on_edit	scripts/user_list.js	/^function on_edit(thisform)$/;"	f
+orderByPlayCount	scripts/game_init.js	/^function orderByPlayCount() {$/;"	f
+orderByScore	scripts/game_init.js	/^function orderByScore() {$/;"	f
+padding: 0	styles/layout.css	/^	padding: 0;$/;"	s
+paste_callback	scripts/filemanager.js	/^function paste_callback(rsp)$/;"	f
+prepareForms	scripts/globals.js	/^function prepareForms(){$/;"	f
+prepareGallery	scripts/globals.js	/^function prepareGallery(){$/;"	f
+prepareInternalnav	scripts/globals.js	/^function prepareInternalnav(){$/;"	f
+preparePlaceholder	scripts/globals.js	/^function preparePlaceholder(){$/;"	f
+prepareSlideshow	scripts/globals.js	/^function prepareSlideshow(){$/;"	f
+prev	scripts/filemanager.js	/^function prev()$/;"	f
+query_totalsize	scripts/user_list.js	/^function query_totalsize()$/;"	f
+query_totalsize.command.appid	scripts/user_list.js	/^	var command = {	appid:1,cmd:"7"};$/;"	p
+query_totalsize.command.cmd	scripts/user_list.js	/^	var command = {	appid:1,cmd:"7"};$/;"	p
+query_totalsize_callback	scripts/user_list.js	/^function query_totalsize_callback(obj_info)$/;"	f
+query_user	scripts/query_user.js	/^function query_user()$/;"	f
+query_user.query_cond.appid	scripts/query_user.js	/^		appid:1,$/;"	p
+query_user.query_cond.cmd	scripts/query_user.js	/^		cmd:"3",$/;"	p
+query_user.query_cond.user_id	scripts/query_user.js	/^		user_id:document.getElementById("id").value,$/;"	p
+query_user_callback	scripts/query_user.js	/^function query_user_callback(obj_info)$/;"	f
+query_user_init	scripts/query_user.js	/^function query_user_init()$/;"	f
+query_user_list	scripts/user_list.js	/^function query_user_list()$/;"	f
+query_user_list.command.appid	scripts/user_list.js	/^	var command = {appid:1,cmd:6,offset:offval,rows:g_items_perpage};	$/;"	p
+query_user_list.command.cmd	scripts/user_list.js	/^	var command = {appid:1,cmd:6,offset:offval,rows:g_items_perpage};	$/;"	p
+query_user_list.command.offset	scripts/user_list.js	/^	var command = {appid:1,cmd:6,offset:offval,rows:g_items_perpage};	$/;"	p
+query_user_list.command.rows	scripts/user_list.js	/^	var command = {appid:1,cmd:6,offset:offval,rows:g_items_perpage};	$/;"	p
+query_user_list_callback	scripts/user_list.js	/^function query_user_list_callback(obj_info)$/;"	f
+rankInit	scripts/rank.js	/^function rankInit() {$/;"	f
+redo_callback	scripts/filemanager.js	/^function redo_callback(rsp)$/;"	f
+reg_callback	scripts/register.js	/^function reg_callback(obj_info)$/;"	f
+register	scripts/register.js	/^function register(thisform)$/;"	f
+register_init	scripts/register.js	/^function register_init()$/;"	f
+remove_table	scripts/query_user.js	/^function remove_table()$/;"	f
+rename_callback	scripts/filemanager.js	/^function rename_callback(rsp)$/;"	f
+request.onreadystatechange	scripts/globals.js	/^		request.onreadystatechange = function(){$/;"	f
+requestHandler	scripts/ajax.js	/^	this.requestHandler = function() $/;"	f
+requestHandler	scripts/sdk.js	/^	this.requestHandler = function() $/;"	f
+request_handler	scripts/http_request.js	/^	this.request_handler = function() $/;"	f
+resetFields	scripts/globals.js	/^function resetFields(whichform){$/;"	f
+rows	scripts/globals.js	/^		rows[i].onmouseout = function(){$/;"	c
+rows	scripts/globals.js	/^		rows[i].onmouseover = function(){$/;"	f
+saveDataCallback	scripts/game_init.js	/^function saveDataCallback(data) {$/;"	f
+saveGameData	scripts/game_init.js	/^function saveGameData() {$/;"	f
+saveGameData.data.time	scripts/game_init.js	/^		"time":myDate.toLocaleTimeString(),$/;"	p
+sdkInit	scripts/sdk.js	/^function sdkInit() {$/;"	f
+section	styles/layout.css	/^section, header, article, nav {$/;"	s
+selectGameByTypeCallback	scripts/rank.js	/^function selectGameByTypeCallback(data) {$/;"	f
+showPic	scripts/globals.js	/^function showPic(whichpic){$/;"	f
+showSection	scripts/globals.js	/^function showSection(id){$/;"	f
+startGame	scripts/game_init.js	/^function startGame() {$/;"	f
+stripeTables	scripts/globals.js	/^function stripeTables(){$/;"	f
+td 	styles/layout.css	/^td {$/;"	s
+textarea 	styles/typography.css	/^textarea {$/;"	s
+th 	styles/color.css	/^th {$/;"	s
+thisform.onsubmit	scripts/globals.js	/^		thisform.onsubmit = function(){$/;"	f
+tr td 	styles/color.css	/^tr td {$/;"	s
+tr.highlight td 	styles/color.css	/^tr.highlight td {$/;"	s
+tr.odd td 	styles/color.css	/^tr.odd td {$/;"	s
+undo_callback	scripts/filemanager.js	/^function undo_callback(rsp)$/;"	f
+update_path	scripts/filemanager.js	/^function update_path()$/;"	f
+update_path.command.appid	scripts/filemanager.js	/^			appid:"2",$/;"	p
+update_path.command.cmd	scripts/filemanager.js	/^			cmd:"8",$/;"	p
+update_path.command.path	scripts/filemanager.js	/^			path:g_current_path};$/;"	p
+update_user_list	scripts/query_user.js	/^function update_user_list(userinfo)$/;"	f
+upload	scripts/add_user.js	/^function upload(thisform)$/;"	f
+upload	scripts/edit_user.js	/^function upload(thisform)$/;"	f
+upload_callback	scripts/add_user.js	/^function upload_callback(obj_info)$/;"	f
+upload_callback	scripts/edit_user.js	/^function upload_callback(obj_info)$/;"	f
+upload_callback	scripts/filemanager.js	/^function upload_callback(rsp)$/;"	f
+upload_process_callback	scripts/filemanager.js	/^function upload_process_callback(evt)$/;"	f
+user_list_init	scripts/user_list.js	/^function user_list_init()$/;"	f
+validateCode	scripts/register.js	/^function validateCode() $/;"	f
+valideForm	scripts/globals.js	/^function valideForm(whichform){$/;"	f
+valide_required	scripts/globals.js	/^function valide_required(field, alerttext)$/;"	f
+var.command.appid	scripts/add_user.js	/^			appid:1,$/;"	p
+var.command.appid	scripts/filemanager.js	/^			appid:"2",$/;"	p
+var.command.appid	scripts/filemanager.js	/^		appid:"2",$/;"	p
+var.command.appid	scripts/login.js	/^		var command = {appid:1, cmd:"5", name:name, pwd:pwd};$/;"	p
+var.command.cmd	scripts/add_user.js	/^			cmd:"1",$/;"	p
+var.command.cmd	scripts/filemanager.js	/^			cmd:"1",$/;"	p
+var.command.cmd	scripts/filemanager.js	/^			cmd:"3",$/;"	p
+var.command.cmd	scripts/filemanager.js	/^			cmd:"4",$/;"	p
+var.command.cmd	scripts/filemanager.js	/^			cmd:command,$/;"	p
+var.command.cmd	scripts/filemanager.js	/^		cmd:"2",$/;"	p
+var.command.cmd	scripts/login.js	/^		var command = {appid:1, cmd:"5", name:name, pwd:pwd};$/;"	p
+var.command.dst	scripts/filemanager.js	/^			dst:dst_path,$/;"	p
+var.command.name	scripts/add_user.js	/^			name:document.getElementById('txt_name').value,		$/;"	p
+var.command.name	scripts/login.js	/^		var command = {appid:1, cmd:"5", name:name, pwd:pwd};$/;"	p
+var.command.new_name	scripts/filemanager.js	/^			new_name:new_name};$/;"	p
+var.command.over_write	scripts/filemanager.js	/^			over_write:"1"};$/;"	p
+var.command.path	scripts/filemanager.js	/^			path:file_name};$/;"	p
+var.command.path	scripts/filemanager.js	/^			path:file_path,$/;"	p
+var.command.path	scripts/filemanager.js	/^			path:g_current_path};$/;"	p
+var.command.path	scripts/filemanager.js	/^		path:file_name};$/;"	p
+var.command.pwd	scripts/login.js	/^		var command = {appid:1, cmd:"5", name:name, pwd:pwd};$/;"	p
+var.command.src	scripts/filemanager.js	/^			src:src_path,$/;"	p
+var.result.data	scripts/sdk.js	/^            'data' : data,$/;"	p
+var.result.errno	scripts/sdk.js	/^            'errno': errno$/;"	p
+var.user_info.appid	scripts/edit_user.js	/^			appid:1,$/;"	p
+var.user_info.appid	scripts/register.js	/^			appid:1,$/;"	p
+var.user_info.cmd	scripts/edit_user.js	/^			cmd:"2",$/;"	p
+var.user_info.cmd	scripts/register.js	/^			cmd:"9",$/;"	p
+var.user_info.name	scripts/register.js	/^			name:document.getElementById('txt_name').value,		$/;"	p
+var.user_info.user_id	scripts/edit_user.js	/^			user_id:document.getElementById('id').value,$/;"	p
+window.onload	scripts/globals.js	/^		window.onload = function(){$/;"	f
+window.onload	scripts/sdk.js	/^		window.onload = function(){$/;"	f

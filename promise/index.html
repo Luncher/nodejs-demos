@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chatset="utf-8"> 
+</head>
+	<script type="text/javascript" src="/public/test1.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var reqs = {
+				test1 : function getTest1() {
+					return getURL("/promise/test1").then(JSON.parse);
+				},
+				test2 : function getTest2() {
+					return getURL("/promise/test2").then(JSON.parse);
+				}
+			};
+			return Promise.all([reqs.test1(), reqs.test2()]);
+			//function recordValue(result, value) {
+			//	result.push(value);
+			//	return result;
+			//}
+			//var pushValue = recordValue.bind(null, []);
+			//return reqs.test1().then(pushValue).then(reqs.test2).then(pushValue);
+		}
+
+		window.onload().then(function(ret) {
+			console.log('ret:', ret);	
+		}).catch(function(err) {
+			console.log('err:', err);	
+		});
+	</script>
+<body>
+
+</body>
+</html>

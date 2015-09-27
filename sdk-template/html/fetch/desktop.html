@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20111201" charset="utf-8"></script>
+	<meta http-equiv="Content-Type" content="type=text/html; charset=utf-8"/>
+	<meta property="wb:webmaster" content="d7ec5f2878649af6"/>
+	<meta property="qc:admins" content="144113137764167215716375"/>
+	<title>html5游戏大全</title>
+	<link rel="stylesheet" type="text/css" href="/sdk/styles/base.css" />
+	<script type="text/javascript" src="/sdk/scripts/globals.js" ></script>
+	<script type="text/javascript" src="/sdk/scripts/game-center.js" ></script>
+	<script type="text/javascript" src="/sdk/scripts/desktop.js" ></script>
+	<script type="text/javascript" src="/sdk/scripts/desktop.js" ></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js" ></script>
+	<script type="text/javascript">
+		function qqLogin() {
+			doLogin("/users/qq.php", null);
+		}
+		function weiboLogin() {
+			doLogin("/users/weibo.php", null);
+		}
+		function wechatLogin() {
+			doLogin("/users/wechat.php", null);
+		}
+		function doLogin(type, onDone) {
+			var url = window.location.href;
+			window.location.href = "http://www.i5r.com.cn" + type + 
+				'?action=init' + '&from='+encodeURIComponent(url);
+		}
+		
+	</script>
+</head>
+<body>
+	<header>
+	<nav>
+		<ul>
+			<li><a href="desktop.html">首页</a></li>
+			<li><a href="rank.html">排行</a></li>
+			<li><a href="type.html">分类</a></li>
+			<li><a href="search.html">搜索</a></li>
+			<li><a href="aboutme.html">我的</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<article>
+		<button id='share_message'>分享到朋友圈</button>
+		<button id='check_jsapi'>检测JS-API</button>
+		<button id='get_weixinState'>获取微信配置</button>
+		<button id='set_appState'>设置状态</button>
+		<button id='listby_state'>listByState</button>
+		<button id='add_Recommend'>添加推荐</button>
+		<button id='del_Recommend'>删除推荐</button>
+		<button id='list_Recommend'>列出所有推荐</button>
+		<button id='shareQzone'>分享到QQ空间</button>
+		<button id='shareQzone'>分享到QQ空间</button>
+		<button id='shareWeibo'>分享到微博</button>
+		<input id="weiboLogin" type="image" src="/images/weibo_logo.png" onclick="javascript:weiboLogin()"/>
+		<input id="qqLogin" type="image" src="/images/qq_logo.png" onclick="javascript:qqLogin()"/>
+		<input id="wechatLogin" type="image" src="/images/wechat.png" onclick="javascript:wechatLogin()"/>
+    <div class="board">
+
+        <div id="slide_show">
+        </div>
+        <div id="score_board">
+    	    <h2>好评榜</h2>
+        </div>
+         <div id="recommand_board">
+	        <h2>推荐榜</h2>
+        </div>
+         <div id="hot_board">
+    	    <h2>热度榜</h2>
+         </div>
+        <div id="realtime_board">
+	        <h2>实时战绩</h2>
+        </div>
+    </div>
+	</article>
+</body>
+</html>
