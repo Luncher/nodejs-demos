@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chatset="utf-8"> 
+</head>
+	<script type="text/javascript">
+		window.onload = function() {
+			var canvas = document.getElementById('main-canvas');
+			canvas.style.width = window.innerWidth + "px";
+			canvas.style.height= window.innerHeight + "px";
+
+			var designWidth = 480;
+			var designHeight= 720;
+
+			//fixHeight
+			canvas.width = designWidth;
+			canvas.height = designWidth/window.innerWidth*window.innerHeight;;
+
+			var context = canvas.getContext('2d');
+				context.fillStyle = 'blue';
+			context.fillRect(0, 0, canvas.width, canvas.height);
+		}
+	</script>
+<body>
+	<canvas id="main-canvas" width="480px" height="720px" style="border:1px solid;width:400px;height:400px;"></canvas>
+</body>
+</html>

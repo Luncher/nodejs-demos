@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chatset="utf-8"> 
+</head>
+	<script type="text/javascript" src="./main.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var canvas = document.getElementsByTagName('canvas')[0];	
+			var ctx = canvas.getContext('2d');
+			ctx.translate(0, 10);
+			testSaveCancasState(ctx);
+			ctx.translate(0, -10);
+
+			ctx.translate(200, 10);
+			testRotate(ctx);
+			ctx.translate(-200, -10);
+
+			ctx.translate(400, 10);
+			testTranslate(ctx);
+			ctx.translate(-400, -10);
+
+			ctx.translate(700, 50);
+			testScale(ctx);
+			ctx.translate(-700, -50);
+
+			ctx.translate(10, 200);
+			testTransform(ctx);
+			ctx.translate(-10, -200);
+
+			ctx.translate(300, 200);
+			isPointInRectangle(ctx, {x: 10, y: 25}, 10, 10, 60, 30, 1, 1, Math.PI/6);
+			ctx.translate(-300, -200);
+		}
+	</script>
+<body>
+	<center><canvas width="1000px" height="600px" style="border:1px solid"></canvas></center>
+</body>
+</html>
