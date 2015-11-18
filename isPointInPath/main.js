@@ -1,4 +1,14 @@
-function isPointInPolygon(points, testx, testy) {
+function testTransformOrder(ctx) {
+	ctx.save();
+
+	ctx.rotate(Math.PI/3);
+	ctx.scale(0.5, 1);
+
+	ctx.fillRect(0, 0, 100, 50);
+	ctx.restore();
+}
+
+function pInPolygon(points, testx, testy) {
 	var c = false;
 
 	for (var i = 0, j = points.length-1; i < points.length; j = i++) {
@@ -8,6 +18,10 @@ function isPointInPolygon(points, testx, testy) {
 	}
 
 	return c;
+}
+
+function isPointInMatrix(matrix, point) {
+	
 }
 
 function isPointInRectangle(ctx, point, x, y, w, h, scaleX, scaleY, rotate) {
@@ -32,7 +46,7 @@ function isPointInRectangle(ctx, point, x, y, w, h, scaleX, scaleY, rotate) {
 	// cos		-sin	0
 	// sin		cos		0
 	// 0		0		1
-	
+
 	var cos = Math.cos(rotate);
 	var sin = Math.sin(rotate);
 	var a = scaleX*cos;
@@ -81,7 +95,7 @@ function isPointInRectangle(ctx, point, x, y, w, h, scaleX, scaleY, rotate) {
 	}
 
 	var points = [p21, p41, p11, p31];
-	var ret = isPointInPolygon(points, point.x, point.y);
+	var ret = pInPolygon(points, point.x, point.y);
 	console.debug('test point: ', point);
 	console.debug('ret: ', ret);
 }
