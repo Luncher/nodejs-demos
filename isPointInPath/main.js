@@ -1,9 +1,42 @@
+//1
+//ctx.scale(scaleX, scaleY);
+//ctx.transform(scaleX, 0, 0, scaleY, 0, 0);
+
+//2
+//ctx.rotate(rotate);
+//var cos = Math.cos(rotate);
+//var sin = Math.sin(rotate);
+//ctx.transform(cos, sin, -sin, cos, 0, 0);
+
 function testTransformOrder(ctx) {
+	var scaleX = 0.5, scaleY = 1;
+	var cos = Math.cos(Math.PI/3);
+	var sin = Math.sin(Math.PI/3);
+
 	ctx.save();
 
+	ctx.scale(scaleX, scaleY);
 	ctx.rotate(Math.PI/3);
-	ctx.scale(0.5, 1);
+	//ctx.transform(scaleX, 0, 0, scaleY, 0, 0);
+	//ctx.transform(cos, sin, -sin, cos, 0, 0);
 
+	ctx.fillRect(0, 0, 100, 50);
+	ctx.restore();
+
+	ctx.translate(200, 0);
+
+	ctx.save();
+	ctx.transform(cos*scaleX, sin*scaleY, -sin*scaleX, cos*scaleY, 0, 0);
+	ctx.fillRect(0, 0, 100, 50);
+	ctx.restore();
+	
+	ctx.translate(200, 0);
+
+	ctx.save();
+	var matrix = new Matrix;
+	matrix.scale(scaleX, scaleY);
+	matrix.rotate(Math.PI/3);
+	ctx.transform(matrix.a, matrix.b, matrix.c, matrix.d, matrix.tx, matrix.ty);
 	ctx.fillRect(0, 0, 100, 50);
 	ctx.restore();
 }
