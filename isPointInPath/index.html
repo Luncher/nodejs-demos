@@ -5,6 +5,7 @@
 </head>
 	<script type="text/javascript" src="./main.js"></script>
 	<script type="text/javascript" src="./matrix.js"></script>
+	<script type="text/javascript" src="./matrix2D.js"></script>
 	<script type="text/javascript">
 		window.onload = function() {
 			var canvas = document.getElementsByTagName('canvas')[0];	
@@ -24,7 +25,7 @@
 				console.debug('catch');
 			}, false);
 			
-			return;
+			//return;
 			var ctx = canvas.getContext('2d');
 			ctx.translate(0, 10);
 			testSaveCancasState(ctx);

@@ -26,6 +26,10 @@ function testTransformOrder(ctx) {
 	ctx.translate(200, 0);
 
 	ctx.save();
+	var a = cos*scaleX;
+	var b = sin*scaleY;
+	var c = -sin*scaleX;
+	var d = cos*scaleY;
 	ctx.transform(cos*scaleX, sin*scaleY, -sin*scaleX, cos*scaleY, 0, 0);
 	ctx.fillRect(0, 0, 100, 50);
 	ctx.restore();
@@ -33,9 +37,11 @@ function testTransformOrder(ctx) {
 	ctx.translate(200, 0);
 
 	ctx.save();
-	var matrix = new Matrix;
+	var matrix = new Matrix2D;
+	//matrix.append(scaleX, 0, 0, scaleY, 0, 0);
+	//matrix.append(cos, sin, -sin, cos, 0, 0);
 	matrix.scale(scaleX, scaleY);
-	matrix.rotate(Math.PI/3);
+	matrix.rotate(60);
 	ctx.transform(matrix.a, matrix.b, matrix.c, matrix.d, matrix.tx, matrix.ty);
 	ctx.fillRect(0, 0, 100, 50);
 	ctx.restore();
